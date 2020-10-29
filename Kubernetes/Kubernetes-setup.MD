@@ -90,7 +90,7 @@
 
 1. Expose the deployment as service. This will create an ELB in front of those 2 containers and allow us to publicly access them.
    ```sh
-   kubectl expose deployment sample-nginx --port=80 --type=LoadBalancer
+   kubectl expose deployment nginx-deployment --port=80 --type=LoadBalancer
    # kubectl expose deployment simple-devops-project --port=8080 --type=LoadBalancer
    kubectl get services -o wide
    ```
